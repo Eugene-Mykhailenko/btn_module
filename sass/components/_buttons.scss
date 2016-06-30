@@ -1,0 +1,212 @@
+//
+// Buttons
+// --------------------------------------------------
+
+.btn {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    height: $btn-height;
+	padding: $btn-padding;
+    margin-bottom: 0;
+    color: $btn-default-color;
+	line-height: $btn-height;
+    font-weight: $btn-font-weight;
+    text-align: center;
+    vertical-align: middle;
+    border: $btn-border;
+    border-radius: $btn-border-radius;
+    background-image: none;
+    background-color: $btn-default-bg;
+    white-space: nowrap;
+    cursor: pointer;
+    outline: none !important;
+    touch-action: manipulation;
+    @extend .--z__depth__1;
+    @include transition(0.3s);
+
+    &:hover {
+        @extend .--z__depth__1__half;
+    }
+
+	// Button Sizes
+	// --------------------------------------------------
+	&--lg {
+		@include button__size($btn-lg-button-height, $btn-lg-padding-horizontal, $btn-lg-font-size, $btn-lg-line-height, $btn-lg-border-radius);
+	}
+	&--sm {
+		@include button__size($btn-sm-button-height, $btn-sm-padding-horizontal, $btn-sm-font-size, $btn-sm-line-height, $btn-sm-border-radius);
+	}
+	&--xs {
+		@include button__size($btn-xs-button-height, $btn-xs-padding-horizontal, $btn-xs-font-size, $btn-xs-line-height, $btn-xs-border-radius);
+	}
+
+
+	&__floating {
+		position: relative;
+		z-index: 1;
+		display: inline-block;
+		width: $btn-floating-size;
+		height: $btn-floating-size;
+		padding: 0;
+		overflow: hidden;
+		font-size: $btn-floating-font-size;
+		color: $btn-default-color;
+		line-height: $btn-floating-size;
+		background-color: $btn-default-bg;
+		border-radius: $btn-floating-radius;
+		cursor: pointer;
+		vertical-align: middle;
+		@extend .--z__depth__1;
+		@include transition(0.3s);
+
+		i,
+		.icon {
+			width: inherit;
+			display: inline-block;
+			text-align: center;
+			color: $btn-default-color;
+			font-size: inherit;
+			line-height: inherit;
+		}
+
+		&:hover {
+			@extend .--z__depth__1__half;
+		}
+
+		&:before {
+			border-radius: 0;
+		}
+
+		// Flat button
+		&--flat {
+			box-shadow: none;
+			background-color: transparent;
+			color: $btn-flat-color;
+			cursor: pointer;
+		}
+
+		&--lg {
+			@include btn__floating__size($btn-floating-lg-size, $btn-floating-lg-font-size);
+		}
+		&--sm {
+			@include btn__floating__size($btn-floating-sm-size, $btn-floating-sm-font-size);
+		}
+		&--xs {
+			@include btn__floating__size($btn-floating-xs-size, $btn-floating-xs-font-size);
+		}
+	}
+
+}
+
+
+
+
+// Btn Icon styles
+.btn,
+.btn__floating {
+	i,
+	.icon {
+		font-size: inherit;
+		line-height: inherit;
+		color: inherit;
+		&.left {
+			margin-right: 0.5em;
+		}
+		&.right {
+			margin-left: 0.5em;
+		}
+	}
+}
+
+
+// Disabled btns
+.btn,
+.btn__floating {
+	&.--disabled,
+	&:disabled {
+		background-color: $btn-disabled-background !important;
+		box-shadow: none !important;
+		color: $btn-disabled-color !important;
+		cursor: default !important;
+
+		* {
+			pointer-events: none;
+		}
+
+		&:hover {
+			background-color: $btn-disabled-background !important;
+			color: $btn-disabled-color !important;
+		}
+	}
+}
+
+// Button colors
+// --------------------------------------------------
+@include button-variant('.btn--primary',$btn-primary-color, $btn-primary-bg, $btn-primary-border);
+@include button-variant('.btn--success',$btn-success-color, $btn-success-bg, $btn-success-border);
+@include button-variant('.btn--info',$btn-info-color, $btn-info-bg, $btn-info-border);
+@include button-variant('.btn--warning',$btn-warning-color, $btn-warning-bg, $btn-warning-border);
+@include button-variant('.btn--danger',$btn-danger-color, $btn-danger-bg, $btn-danger-border);
+
+
+
+// Block button
+// --------------------------------------------------
+.btn--block {
+	display: block;
+	width: 100%;
+}
+// Vertically space out multiple block buttons
+.btn--block + .btn--block {
+	margin-top: 5px;
+}
+
+
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+	&.btn-block {
+		width: 100%;
+	}
+}
+
+
+// Close Btn
+// --------------------------------------------------
+.btn__close {
+	float: right;
+	font-size: ($font-size-base * 1.5);
+	font-weight: $close-font-weight;
+	line-height: 1;
+	color: $close-color;
+	text-shadow: $close-text-shadow;
+	opacity:0.2;
+	&:hover,
+	&:focus {
+		color: $close-color;
+		text-decoration: none;
+		cursor: pointer;
+		opacity:0.5;
+	}
+}
+
+
+
+// Dropdown arrow/caret
+.caret {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-left: 2px;
+	vertical-align: middle;
+	border-top:   $caret-width-base dashed;
+	border-top:   $caret-width-base solid \9; // IE8
+	border-right: $caret-width-base solid transparent;
+	border-left:  $caret-width-base solid transparent;
+}
+
+
+
