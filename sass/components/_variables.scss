@@ -74,9 +74,6 @@ $component-active-color:    $color-white !default;
 //** Global background color for active items (e.g., navs or dropdowns).
 $component-active-bg:       $color-primary !default;
 
-// Caret
-$caret-width-base:          4px !default;
-$caret-width-large:         5px !default;
 
 
 /* =======================================================================
@@ -87,7 +84,7 @@ $btn-height: 35px !default;
 $btn-padding: 0 12px !default;
 $btn-font-size: 1em !default;
 $btn-font-weight: 300 !default;
-$btn-border: none !default;
+$btn-border: 1px !default;
 $btn-border-radius: 2px !default;
 
 // Buttons sizes
@@ -121,6 +118,7 @@ $btn-floating-background: $color-primary !default;
 $btn-floating-background-hover: $btn-floating-background !default;
 $btn-floating-color: $color-white !default;
 $btn-floating-size: 35px !default;
+$btn-floating-border: 1px !default;
 $btn-floating-radius: 50% !default;
 $btn-floating-font-size: 1em !default;
 
