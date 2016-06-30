@@ -62,17 +62,6 @@ $headings-line-height:    1.1 !default;
 $headings-color:          inherit !default;
 
 
-/* =======================================================================
-	Components
-======================================================================= */
-$border-radius-base:        0px !default;
-$border-radius-large:       0px !default;
-$border-radius-small:       0px !default;
-
-//** Global color for active items (e.g., navs or dropdowns).
-$component-active-color:    $color-white !default;
-//** Global background color for active items (e.g., navs or dropdowns).
-$component-active-bg:       $color-primary !default;
 
 
 
@@ -168,11 +157,6 @@ $btn-danger-bg:                  $color-danger !default;
 $btn-danger-border:              $btn-danger-bg !default;
 
 
-
-// Close
-$close-font-weight:           bold !default;
-$close-color:                 #000 !default;
-$close-text-shadow:           0 1px 0 $color-white !default;
 
 
 
