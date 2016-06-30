@@ -41,6 +41,14 @@
 		@include button__size($btn-xs-button-height, $btn-xs-padding-horizontal, $btn-xs-font-size, $btn-xs-line-height, $btn-xs-border-radius);
 	}
 
+	// Flat button
+	&--flat {
+		box-shadow: none;
+		background-color: transparent;
+		color: $btn-flat-color;
+		cursor: pointer;
+	}
+
 
 	&__floating {
 		position: relative;
@@ -85,15 +93,16 @@
 			color: $btn-flat-color;
 			cursor: pointer;
 		}
-
-		&--lg {
-			@include btn__floating__size($btn-floating-lg-size, $btn-floating-lg-font-size);
-		}
-		&--sm {
-			@include btn__floating__size($btn-floating-sm-size, $btn-floating-sm-font-size);
-		}
-		&--xs {
-			@include btn__floating__size($btn-floating-xs-size, $btn-floating-xs-font-size);
+		&.btn {
+			&--lg {
+				@include btn__floating__size($btn-floating-lg-size, $btn-floating-lg-font-size);
+			}
+			&--sm {
+				@include btn__floating__size($btn-floating-sm-size, $btn-floating-sm-font-size);
+			}
+			&--xs {
+				@include btn__floating__size($btn-floating-xs-size, $btn-floating-xs-font-size);
+			}
 		}
 	}
 
@@ -123,7 +132,7 @@
 // Disabled btns
 .btn,
 .btn__floating {
-	&.--disabled,
+	&--disabled,
 	&:disabled {
 		background-color: $btn-disabled-background !important;
 		box-shadow: none !important;

@@ -95,19 +95,19 @@ $btn-border-radius: 2px !default;
 // Extra Small buttons
 $btn-xs-button-height: 22px;
 $btn-xs-padding-horizontal: 1em;
-$btn-xs-font-size: 12px;
+$btn-xs-font-size: $btn-xs-button-height * 0.5;
 $btn-xs-line-height: $btn-xs-button-height;
 $btn-xs-border-radius: $btn-border-radius;
 // Small buttons
 $btn-sm-button-height: 30px;
 $btn-sm-padding-horizontal: 1em;
-$btn-sm-font-size: 12px;
+$btn-sm-font-size: $btn-sm-button-height * 0.5;
 $btn-sm-line-height: $btn-sm-button-height;
 $btn-sm-border-radius: $btn-border-radius;
 // Large buttons
 $btn-lg-button-height: 40px;
 $btn-lg-padding-horizontal: 1em;
-$btn-lg-font-size: 18px;
+$btn-lg-font-size: $btn-lg-button-height * 0.5;
 $btn-lg-line-height: $btn-lg-button-height;
 $btn-lg-border-radius: $btn-border-radius;
 
@@ -130,13 +130,13 @@ $btn-floating-font-size: 1em !default;
 
 // Extra Small Floating Buttons
 $btn-floating-xs-size: 22px;
-$btn-floating-xs-font-size: 12px;
+$btn-floating-xs-font-size: $btn-floating-xs-size * 0.5;
 // Small Floating Buttons
 $btn-floating-sm-size: 30px;
-$btn-floating-sm-font-size: 12px;
+$btn-floating-sm-font-size: $btn-floating-sm-size * 0.5;
 // Large Floating Buttons
 $btn-floating-lg-size: 40px;
-$btn-floating-lg-font-size: 18px;
+$btn-floating-lg-font-size: $btn-floating-lg-size * 0.5;
 
 // Disabled styles
 $btn-disabled-background: $disabled-color !default;
