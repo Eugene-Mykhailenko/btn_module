@@ -2,7 +2,6 @@
 	Variables
 ======================================================================= */
 
-
 // Colors
 $color-white:             #fff !default;
 $color-black:             #000 !default;
@@ -25,16 +24,12 @@ $disabled-color:          lighten($color-gray-light, 15%);
 $disabled-text-color:     lighten($color-gray-lighter, 15%);
 
 
-
 $body-bg:                 $color-white !default;
 $text-color:              $color-gray-dark !default;
 
 $link-color:              $color-primary !default;
 $link-hover-color:        inherit !default;
 $link-hover-decoration:   none !default;
-
-
-
 
 /* =======================================================================
 	Typography
@@ -62,9 +57,6 @@ $headings-line-height:    1.1 !default;
 $headings-color:          inherit !default;
 
 
-
-
-
 /* =======================================================================
 	Buttons
 ========================================================================== */
@@ -74,7 +66,7 @@ $btn-padding: 0 12px !default;
 $btn-font-size: 1em !default;
 $btn-font-weight: 300 !default;
 $btn-border: 1px !default;
-$btn-border-radius: 2px !default;
+$btn-border-radius: 0 !default;
 
 // Buttons sizes
 //--------------
@@ -99,7 +91,7 @@ $btn-lg-border-radius: $btn-border-radius;
 
 // Flat buttons
 //-----------------
-$btn-flat-color: #343434 !default;
+//$btn-flat-color: #343434 !default;
 
 //Floating buttons
 //-----------------
@@ -108,7 +100,6 @@ $btn-floating-background-hover: $btn-floating-background !default;
 $btn-floating-color: $color-white !default;
 $btn-floating-size: 35px !default;
 $btn-floating-border: 1px !default;
-$btn-floating-radius: 50% !default;
 $btn-floating-font-size: 1em !default;
 
 
@@ -132,9 +123,9 @@ $btn-disabled-color: $disabled-text-color !default;
 //Btn colors
 //-----------------
 //btn-default
-$btn-default-color:              $color-gray-darker !default;
-$btn-default-bg:                 $color-white !default;
-$btn-default-border:             $color-gray-darker !default;
+$btn-default-color:              $color-white !default;
+$btn-default-bg:                 $color-gray-lighter !default;
+$btn-default-border:             $color-gray-lighter !default;
 //btn-primary
 $btn-primary-color:              $color-white !default;
 $btn-primary-bg:                 $color-primary !default;
@@ -155,8 +146,6 @@ $btn-warning-border:             $btn-warning-bg !default;
 $btn-danger-color:               $color-white !default;
 $btn-danger-bg:                  $color-danger !default;
 $btn-danger-border:              $btn-danger-bg !default;
-
-
 
 
 

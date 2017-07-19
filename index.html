@@ -6,13 +6,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <![endif]-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <title>BTNS module</title>
+        <title>Buttons set</title>
         <meta name="description" content="" />
         <meta name="keywords" content="" />
         <!--<link href="./images/" rel="shortcut icon" type="image/x-icon" />-->
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700%7Csubset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link href="./css/style.min.css" rel="stylesheet" type="text/css" />
+        <link href="./css/style.css" rel="stylesheet" type="text/css" />
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -21,153 +21,267 @@
         <![endif]-->
     </head>
     <body>
-        <main class="main__theme__wrap">
-			<!-- main section -->
-            <section class="theme__section">
-
+        <main class="container">
+            <section class="container-section">
+				<h1>Buttons set</h1>
 				<hr>
-				<h3>Flat Btn</h3>
-				<hr>
-				<a class="btn btn--flat">Button</a>
-				<a class="btn__floating btn--flat"><i class="material-icons">add</i></a>
+				<h3>Colors & states</h3>
 
-				<hr>
-				<h3>Buttons Size</h3>
-				<hr>
-				<a class="btn btn--xs"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--sm "><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--lg "><i class="material-icons icon--left">cloud</i>button</a>
+                <div class="row">
+                    <div class="col-2">
+                        <a class="btn btn--default btn--block">Default</a>
+                        <a class="btn btn--default btn--disabled btn--block">Disabled</a>
+                        <a class="btn btn--default btn--inverse btn--block">Inverse</a>
+                        <a class="btn btn--default btn--inverse btn--disabled btn--block">Inv Disabled</a>
+                    </div>
+                    <div class="col-2">
+                        <a class="btn btn--primary btn--block">Primary</a>
+                        <a class="btn btn--primary btn--disabled btn--block">Disabled</a>
+                        <a class="btn btn--primary btn--inverse btn--block">Inverse</a>
+                        <a class="btn btn--primary btn--inverse btn--disabled btn--block">Inv Disabled</a>
+                    </div>
+                    <div class="col-2">
+                        <a class="btn btn--success btn--block">Success</a>
+                        <a class="btn btn--success btn--disabled btn--block">Disabled</a>
+                        <a class="btn btn--success btn--inverse btn--block">Inverse</a>
+                        <a class="btn btn--success btn--inverse btn--disabled btn--block">Inv Disabled</a>
+                    </div>
+                    <div class="col-2">
+                        <a class="btn btn--info btn--block">Info</a>
+                        <a class="btn btn--info btn--disabled btn--block">Disabled</a>
+                        <a class="btn btn--info btn--inverse btn--block">Inverse</a>
+                        <a class="btn btn--info btn--inverse btn--disabled btn--block">Inv Disabled</a>
+                    </div>
+                    <div class="col-2">
+                        <a class="btn btn--warning btn--block">Warning</a>
+                        <a class="btn btn--warning btn--disabled btn--block">Disabled</a>
+                        <a class="btn btn--warning btn--inverse btn--block">Inverse</a>
+                        <a class="btn btn--warning btn--inverse btn--disabled btn--block">Inv Disabled</a>
+                    </div>
+                    <div class="col-2">
+                        <a class="btn btn--danger btn--block">Danger</a>
+                        <a class="btn btn--danger btn--disabled btn--block">Disabled</a>
+                        <a class="btn btn--danger btn--inverse btn--block">Inverse</a>
+                        <a class="btn btn--danger btn--inverse btn--disabled btn--block">Inv Disabled</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <a class="btn-floating btn--default"><i class="material-icons">check</i></a>
+                        <a class="btn-floating btn--primary"><i class="material-icons">check</i></a>
+                        <a class="btn-floating btn--success"><i class="material-icons">check</i></a>
+                        <a class="btn-floating btn--info"><i class="material-icons">check</i></a>
+                        <a class="btn-floating btn--warning"><i class="material-icons">check</i></a>
+                        <a class="btn-floating btn--danger"><i class="material-icons">check</i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <a class="btn-floating btn--default btn--disabled"><i class="material-icons">check</i></a>
+                        <a class="btn-floating btn--primary btn--disabled"><i class="material-icons">check</i></a>
+                        <a class="btn-floating btn--success btn--disabled"><i class="material-icons">check</i></a>
+                        <a class="btn-floating btn--info btn--disabled"><i class="material-icons">check</i></a>
+                        <a class="btn-floating btn--warning btn--disabled"><i class="material-icons">check</i></a>
+                        <a class="btn-floating btn--danger btn--disabled"><i class="material-icons">check</i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <a class="btn-floating btn--default btn--inverse"><i class="material-icons">check</i></a>
+                        <a class="btn-floating btn--primary btn--inverse"><i class="material-icons">check</i></a>
+                        <a class="btn-floating btn--success btn--inverse"><i class="material-icons">check</i></a>
+                        <a class="btn-floating btn--info btn--inverse"><i class="material-icons">check</i></a>
+                        <a class="btn-floating btn--warning btn--inverse"><i class="material-icons">check</i></a>
+                        <a class="btn-floating btn--danger btn--inverse"><i class="material-icons">check</i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <a class="btn-floating btn--default btn--inverse btn--disabled"><i class="material-icons">check</i></a>
+                        <a class="btn-floating btn--primary btn--inverse btn--disabled"><i class="material-icons">check</i></a>
+                        <a class="btn-floating btn--success btn--inverse btn--disabled"><i class="material-icons">check</i></a>
+                        <a class="btn-floating btn--info btn--inverse btn--disabled"><i class="material-icons">check</i></a>
+                        <a class="btn-floating btn--warning btn--inverse btn--disabled"><i class="material-icons">check</i></a>
+                        <a class="btn-floating btn--danger btn--inverse btn--disabled"><i class="material-icons">check</i></a>
+                    </div>
+                </div>
 
-				<br><br>
-				<a class="btn btn--xs btn--flat"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--sm  btn--flat"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--flat"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--lg btn--flat"><i class="material-icons icon--left">cloud</i>button</a>
-
-				<br><br>
-
-				<a class="btn__floating btn--xs"><i class="material-icons">add</i></a>
-				<a class="btn__floating btn--sm"><i class="material-icons">add</i></a>
-				<a class="btn__floating"><i class="material-icons">add</i></a>
-				<a class="btn__floating btn--lg"><i class="material-icons">add</i></a>
-
-				<br><br>
-				<a class="btn__floating btn--xs btn--flat"><i class="material-icons">add</i></a>
-				<a class="btn__floating btn--sm btn--flat"><i class="material-icons">add</i></a>
-				<a class="btn__floating btn--flat"><i class="material-icons">add</i></a>
-				<a class="btn__floating btn--lg btn--flat"><i class="material-icons">add</i></a>
-
-				<br><br>
-
-				<hr>
-				<h3>Disabled</h3>
-				<hr>
-				<a class="btn btn--xs btn--disabled">Button disabled</a>
-				<a class="btn btn--sm btn--disabled">Button disabled</a>
-				<a class="btn btn--disabled">Button disabled</a>
-				<a class="btn btn--lg btn--disabled">Button disabled</a>
-
-				<br><br>
-				<a class="btn__floating btn--xs btn--disabled"><i class="material-icons">add</i></a>
-				<a class="btn__floating btn--sm btn--disabled"><i class="material-icons">add</i></a>
-				<a class="btn__floating btn--disabled"><i class="material-icons">add</i></a>
-				<a class="btn__floating btn--lg btn--disabled"><i class="material-icons">add</i></a>
-
-
-
-				<br><br>
-
-				<hr>
-				<h3>Buttons Colors</h3>
-				<hr>
-				<a class="btn"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--primary"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--success"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--info"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--warning"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--danger"><i class="material-icons icon--left">cloud</i>button</a>
-
-				<br><br>
-
-				<a class="btn__floating"><i class="material-icons">cloud</i>button</a>
-				<a class="btn__floating btn--primary"><i class="material-icons">cloud</i>button</a>
-				<a class="btn__floating btn--success "><i class="material-icons">cloud</i>button</a>
-				<a class="btn__floating btn--info "><i class="material-icons">cloud</i>button</a>
-				<a class="btn__floating btn--warning "><i class="material-icons">cloud</i>button</a>
-				<a class="btn__floating btn--danger "><i class="material-icons">cloud</i>button</a>
+                <hr>
+                <h3>Size & Icons</h3>
+                <div class="row">
+                    <div class="col">
+                        <a class="btn btn--primary btn--lg">Button lg</a>
+                        <a class="btn btn--primary btn--lg"><i class="material-icons icon--left">motorcycle</i> Icon Left</a>
+                        <a class="btn btn--primary btn--lg"> Icon Right <i class="material-icons icon--right">motorcycle</i></a>
+                        <a class="btn btn--primary btn--lg"><i class="material-icons">motorcycle</i></a>
+                        <a class="btn-floating btn--primary btn--lg"><i class="material-icons">check</i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a class="btn btn--primary">Button md</a>
+                        <a class="btn btn--primary"><i class="material-icons icon--left">motorcycle</i> Icon Left</a>
+                        <a class="btn btn--primary"> Icon Right <i class="material-icons icon--right">motorcycle</i></a>
+                        <a class="btn btn--primary"><i class="material-icons">motorcycle</i></a>
+                        <a class="btn-floating btn--primary"><i class="material-icons">check</i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a class="btn btn--primary btn--sm">Button sm</a>
+                        <a class="btn btn--primary btn--sm"><i class="material-icons icon--left">motorcycle</i> Icon Left</a>
+                        <a class="btn btn--primary btn--sm"> Icon Right <i class="material-icons icon--right">motorcycle</i></a>
+                        <a class="btn btn--primary btn--sm"><i class="material-icons">motorcycle</i></a>
+                        <a class="btn-floating btn--primary btn--sm"><i class="material-icons">check</i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a class="btn btn--primary btn--xs">Button xs</a>
+                        <a class="btn btn--primary btn--xs"><i class="material-icons icon--left">motorcycle</i> Icon Left</a>
+                        <a class="btn btn--primary btn--xs"> Icon Right <i class="material-icons icon--right">motorcycle</i></a>
+                        <a class="btn btn--primary btn--xs"><i class="material-icons">motorcycle</i></a>
+                        <a class="btn-floating btn--primary btn--xs"><i class="material-icons">check</i></a>
+                    </div>
+                </div>
 
 				<hr>
 				<h3>Buttons block</h3>
-				<hr>
+                <a class="btn btn--default btn--block"><i class="material-icons icon--left">cloud</i>Default</a>
+				<a class="btn btn--primary btn--block"><i class="material-icons icon--left">cloud</i>Primary</a>
+				<a class="btn btn--success btn--block"><i class="material-icons icon--left">cloud</i>Success</a>
+				<a class="btn btn--info btn--block"><i class="material-icons icon--left">cloud</i>Info</a>
+				<a class="btn btn--warning btn--block"><i class="material-icons icon--left">cloud</i>Warning</a>
+				<a class="btn btn--danger btn--block"><i class="material-icons icon--left">cloud</i>Danger</a>
 
-				<a class="btn btn--block"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--primary btn--block"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--success btn--block"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--info btn--block"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--warning btn--block"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--danger btn--block"><i class="material-icons icon--left">cloud</i>button</a>
+                <h3>Groupe Buttons</h3>
 
-				<br><br>
-
-				<a class="btn__floating btn--block"><i class="material-icons">cloud</i>button</a>
-				<a class="btn__floating btn--primary btn--block"><i class="material-icons">cloud</i>button</a>
-				<a class="btn__floating btn--success  btn--block"><i class="material-icons">cloud</i>button</a>
-				<a class="btn__floating btn--info  btn--block"><i class="material-icons">cloud</i>button</a>
-				<a class="btn__floating btn--warning  btn--block"><i class="material-icons">cloud</i>button</a>
-				<a class="btn__floating btn--danger  btn--block"><i class="material-icons">cloud</i>button</a>
-
-
-				<hr>
-				<h3>Buttons Inverse</h3>
-				<hr>
-				<a class="btn btn--inverse"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--primary btn--inverse"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--success btn--inverse"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--info btn--inverse"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--warning btn--inverse"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--danger btn--inverse"><i class="material-icons icon--left">cloud</i>button</a>
-
-				<br><br>
-
-				<a class="btn__floating btn--inverse"><i class="material-icons">cloud</i>button</a>
-				<a class="btn__floating btn--primary btn--inverse"><i class="material-icons">cloud</i>button</a>
-				<a class="btn__floating btn--success  btn--inverse"><i class="material-icons">cloud</i>button</a>
-				<a class="btn__floating btn--info  btn--inverse"><i class="material-icons">cloud</i>button</a>
-				<a class="btn__floating btn--warning  btn--inverse"><i class="material-icons">cloud</i>button</a>
-				<a class="btn__floating btn--danger  btn--inverse"><i class="material-icons">cloud</i>button</a>
-
+                <div class="btn-group">
+                    <a class="btn btn--default"><i class="material-icons icon--left">cloud</i>Default</a>
+                    <a class="btn btn--primary"><i class="material-icons icon--left">cloud</i>Primary</a>
+                    <a class="btn btn--success"><i class="material-icons icon--left">cloud</i>Success</a>
+                    <a class="btn btn--info"><i class="material-icons icon--left">cloud</i>info</a>
+                    <a class="btn btn--warning"><i class="material-icons icon--left">cloud</i>warning</a>
+                    <a class="btn btn--danger"><i class="material-icons icon--left">cloud</i>danger</a>
+                </div>
+                <div class="btn-group">
+                    <a class="btn btn--default btn--inverse"><i class="material-icons icon--left">cloud</i>Default</a>
+                    <a class="btn btn--primary btn--inverse"><i class="material-icons icon--left">cloud</i>Primary</a>
+                    <a class="btn btn--success btn--inverse"><i class="material-icons icon--left">cloud</i>Success</a>
+                    <a class="btn btn--info btn--inverse"><i class="material-icons icon--left">cloud</i>info</a>
+                    <a class="btn btn--warning btn--inverse"><i class="material-icons icon--left">cloud</i>warning</a>
+                    <a class="btn btn--danger btn--inverse"><i class="material-icons icon--left">cloud</i>danger</a>
+                </div>
+                <h3>Groupe Buttons Inline</h3>
+                <div class="btn-group btn-group--inline">
+                    <a class="btn btn--primary"><i class="material-icons icon--left">cloud</i>Primary</a>
+                    <a class="btn btn--success">Success <i class="material-icons icon--right">cloud</i></a>
+                    <a class="btn btn--info"><i class="material-icons icon--left">cloud</i>Info</a>
+                    <a class="btn btn--warning">Warning<i class="material-icons icon--right">cloud</i></a>
+                    <a class="btn btn--danger"><i class="material-icons icon--left">cloud</i>Danger</a>
+                </div>
+                <div class="btn-group btn-group--inline">
+                    <a class="btn btn--primary"><i class="material-icons icon--left">cloud</i>Primary</a>
+                    <a class="btn btn--success">Success <i class="material-icons icon--right">cloud</i></a>
+                    <a class="btn btn--info"><i class="material-icons icon--left">cloud</i>Info</a>
+                    <a class="btn btn--warning">Warning<i class="material-icons icon--right">cloud</i></a>
+                    <a class="btn btn--danger"><i class="material-icons icon--left">cloud</i>Danger</a>
+                </div>
+                <div class="btn-group btn-group--inline">
+                    <a class="btn btn--primary btn--inverse"><i class="material-icons icon--left">cloud</i>Primary</a>
+                    <a class="btn btn--success btn--inverse">Success <i class="material-icons icon--right">cloud</i></a>
+                    <a class="btn btn--info btn--inverse"><i class="material-icons icon--left">cloud</i>Info</a>
+                    <a class="btn btn--warning btn--inverse">Warning<i class="material-icons icon--right">cloud</i></a>
+                    <a class="btn btn--danger btn--inverse"><i class="material-icons icon--left">cloud</i>Danger</a>
+                </div>
+                <div class="btn-group btn-group--inline">
+                    <a class="btn btn--primary btn--inverse"><i class="material-icons icon--left">cloud</i>Primary</a>
+                    <a class="btn btn--success btn--inverse">Success <i class="material-icons icon--right">cloud</i></a>
+                    <a class="btn btn--info btn--inverse"><i class="material-icons icon--left">cloud</i>Info</a>
+                    <a class="btn btn--warning btn--inverse">Warning<i class="material-icons icon--right">cloud</i></a>
+                    <a class="btn btn--danger btn--inverse"><i class="material-icons icon--left">cloud</i>Danger</a>
+                </div>
 
 				<hr>
 				<h3>Use tag 'buttons' instead tag 'a'</h3>
-				<hr>
-				<button class="btn btn--inverse"><i class="material-icons icon--left">cloud</i>button</button>
-				<button class="btn btn--primary"><i class="material-icons icon--left">cloud</i>button</button>
-				<button class="btn btn--success"><i class="material-icons icon--left">cloud</i>button</button>
-				<button class="btn btn--info"><i class="material-icons icon--left">cloud</i>button</button>
-				<button class="btn btn--warning"><i class="material-icons icon--left">cloud</i>button</button>
-				<button class="btn btn--danger"><i class="material-icons icon--left">cloud</i>button</button>
+				<button class="btn btn--default"><i class="material-icons icon--left">cloud</i>Default</button>
+				<button class="btn btn--primary"><i class="material-icons icon--left">cloud</i>Primary</button>
+				<button class="btn btn--success"><i class="material-icons icon--left">cloud</i>Success</button>
+				<button class="btn btn--info"><i class="material-icons icon--left">cloud</i>Info</button>
+				<button class="btn btn--warning"><i class="material-icons icon--left">cloud</i>Warning</button>
+				<button class="btn btn--danger"><i class="material-icons icon--left">cloud</i>Danger</button>
 
-				<br><br>
+				<button class="btn-floating btn--default"><i class="material-icons">cloud</i></button>
+				<button class="btn-floating btn--primary"><i class="material-icons">cloud</i></button>
+				<button class="btn-floating btn--success "><i class="material-icons">cloud</i></button>
+				<button class="btn-floating btn--info "><i class="material-icons">cloud</i></button>
+				<button class="btn-floating btn--warning "><i class="material-icons">cloud</i></button>
+				<button class="btn-floating btn--danger "><i class="material-icons">cloud</i></button>
 
-				<button class="btn__floating"><i class="material-icons">cloud</i>button</button>
-				<button class="btn__floating btn--primary"><i class="material-icons">cloud</i>button</button>
-				<button class="btn__floating btn--success "><i class="material-icons">cloud</i>button</button>
-				<button class="btn__floating btn--info "><i class="material-icons">cloud</i>button</button>
-				<button class="btn__floating btn--warning "><i class="material-icons">cloud</i>button</button>
-				<button class="btn__floating btn--danger "><i class="material-icons">cloud</i>button</button>
+                <br><br>
+
+                <button class="btn btn--default btn--inverse"><i class="material-icons icon--left">cloud</i>Default</button>
+                <button class="btn btn--primary btn--inverse"><i class="material-icons icon--left">cloud</i>Primary</button>
+                <button class="btn btn--success btn--inverse"><i class="material-icons icon--left">cloud</i>Success</button>
+                <button class="btn btn--info btn--inverse"><i class="material-icons icon--left">cloud</i>Info</button>
+                <button class="btn btn--warning btn--inverse"><i class="material-icons icon--left">cloud</i>Warning</button>
+                <button class="btn btn--danger btn--inverse"><i class="material-icons icon--left">cloud</i>Danger</button>
+
+                <button class="btn-floating btn--default btn--inverse"><i class="material-icons">cloud</i></button>
+                <button class="btn-floating btn--primary btn--inverse"><i class="material-icons">cloud</i></button>
+                <button class="btn-floating btn--success  btn--inverse"><i class="material-icons">cloud</i></button>
+                <button class="btn-floating btn--info  btn--inverse"><i class="material-icons">cloud</i></button>
+                <button class="btn-floating btn--warning  btn--inverse"><i class="material-icons">cloud</i></button>
+                <button class="btn-floating btn--danger  btn--inverse"><i class="material-icons">cloud</i></button>
 
 
 				<hr>
 				<h3>Use tag 'input' instead tag 'a'</h3>
-				<hr>
-				<input type='submit' class="btn">
-				<input type='submit' class="btn btn--primary">
-				<input type='submit' class="btn btn--success">
-				<input type='submit' class="btn btn--info">
-				<input type='submit' class="btn btn--warning">
-				<input type='submit' class="btn btn--danger">
 
+                <input type='submit' value="Default" class="btn btn--default">
+                <input type='submit' value="Primary" class="btn btn--primary">
+                <input type='submit' value="Success" class="btn btn--success">
+                <input type='submit' value="Info" class="btn btn--info">
+                <input type='submit' value="Warning" class="btn btn--warning">
+                <input type='submit' value="Danger" class="btn btn--danger">
+
+                <input type='submit' value="check" class="btn btn--default material-icons">
+                <input type='submit' value="check" class="btn btn--primary material-icons">
+                <input type='submit' value="check" class="btn btn--success material-icons">
+                <input type='submit' value="check" class="btn btn--info material-icons">
+                <input type='submit' value="cloud" class="btn btn--warning material-icons">
+                <input type='submit' value="close" class="btn btn--danger material-icons">
+
+                <input type='submit' value="check" class="btn-floating btn--default material-icons">
+                <input type='submit' value="check" class="btn-floating btn--primary material-icons">
+                <input type='submit' value="check" class="btn-floating btn--success material-icons">
+                <input type='submit' value="check" class="btn-floating btn--info material-icons">
+                <input type='submit' value="cloud" class="btn-floating btn--warning material-icons">
+                <input type='submit' value="close" class="btn-floating btn--danger material-icons">
+
+                <br>
+                <br>
+
+                <input type='submit' value="Default" class="btn btn--default btn--inverse">
+                <input type='submit' value="Primary" class="btn btn--primary btn--inverse">
+                <input type='submit' value="Success" class="btn btn--success btn--inverse">
+                <input type='submit' value="Info" class="btn btn--info btn--inverse">
+                <input type='submit' value="Warning" class="btn btn--warning btn--inverse">
+                <input type='submit' value="Danger" class="btn btn--danger btn--inverse">
+
+                <input type='submit' value="check" class="btn btn--default material-icons btn--inverse">
+                <input type='submit' value="check" class="btn btn--primary material-icons btn--inverse">
+                <input type='submit' value="check" class="btn btn--success material-icons btn--inverse">
+                <input type='submit' value="check" class="btn btn--info material-icons btn--inverse">
+                <input type='submit' value="cloud" class="btn btn--warning material-icons btn--inverse">
+                <input type='submit' value="close" class="btn btn--danger material-icons btn--inverse">
+
+                <input type='submit' value="check" class="btn-floating btn--default material-icons btn--inverse">
+                <input type='submit' value="check" class="btn-floating btn--primary material-icons btn--inverse">
+                <input type='submit' value="check" class="btn-floating btn--success material-icons btn--inverse">
+                <input type='submit' value="check" class="btn-floating btn--info material-icons btn--inverse">
+                <input type='submit' value="cloud" class="btn-floating btn--warning material-icons btn--inverse">
+                <input type='submit' value="close" class="btn-floating btn--danger material-icons btn--inverse">
 
 			</section>
         </main>

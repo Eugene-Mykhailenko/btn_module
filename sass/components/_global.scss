@@ -2,11 +2,11 @@
 // global
 // --------------------------------------------------
 * {
-  @include box-sizing(border-box);
+  box-sizing: border-box;
 }
 *:before,
 *:after {
-  @include box-sizing(border-box);
+  box-sizing: border-box;
 }
 
 
@@ -34,7 +34,6 @@ textarea {
 	line-height: inherit;
 }
 
-
 // Links
 a {
 	color: $link-color;
@@ -45,7 +44,6 @@ a {
 		color: $link-hover-color;
 		text-decoration: $link-hover-decoration;
 	}
-
 	&:focus {
 	  	@include tab-focus;
 	}
@@ -59,7 +57,7 @@ hr {
 	border-top: 1px solid $hr-border;
 }
 
-.theme__section {
+.container-section {
 	max-width: 1170px;
 	margin: auto;
 	padding: 20px 0;

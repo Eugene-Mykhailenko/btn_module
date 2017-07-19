@@ -1,23 +1,16 @@
 @charset "UTF-8";
 
-
-
 // Core variables and mixins
 @import "components/variables";
 @import "components/mixins";
 
-
 // Reset
 @import "components/normalize";
 
-
 // Core CSS
 @import "components/global";
+@import "components/grid";
 @import "components/typography";
-
-@import "components/_helper.scss";
-
 
 // Components
 @import "components/buttons";
-@import "components/icons/theme-icons";
