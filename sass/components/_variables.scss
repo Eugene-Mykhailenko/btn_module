@@ -20,10 +20,6 @@ $color-warning:           rgba(255, 235, 59, .70) !default;
 $color-danger:            rgba(244, 67, 54, .70) !default;
 
 
-$disabled-color:          lighten($color-gray-light, 15%);
-$disabled-text-color:     lighten($color-gray-lighter, 15%);
-
-
 $body-bg:                 $color-white !default;
 $text-color:              $color-gray-dark !default;
 
@@ -62,7 +58,7 @@ $headings-color:          inherit !default;
 ========================================================================== */
 // General btn styles
 $btn-height: 35px !default;
-$btn-padding: 0 12px !default;
+$btn-padding: 0 1em !default;
 $btn-font-size: 1em !default;
 $btn-font-weight: 300 !default;
 $btn-border: 1px !default;
@@ -89,19 +85,12 @@ $btn-lg-font-size: $btn-lg-button-height * 0.5;
 $btn-lg-line-height: $btn-lg-button-height;
 $btn-lg-border-radius: $btn-border-radius;
 
-// Flat buttons
-//-----------------
-//$btn-flat-color: #343434 !default;
 
 //Floating buttons
 //-----------------
-$btn-floating-background: $color-primary !default;
-$btn-floating-background-hover: $btn-floating-background !default;
-$btn-floating-color: $color-white !default;
 $btn-floating-size: 35px !default;
 $btn-floating-border: 1px !default;
 $btn-floating-font-size: 1em !default;
-
 
 // Floating buttons sizes
 //-----------------
@@ -115,10 +104,6 @@ $btn-floating-sm-font-size: $btn-floating-sm-size * 0.5;
 // Large Floating Buttons
 $btn-floating-lg-size: 40px;
 $btn-floating-lg-font-size: $btn-floating-lg-size * 0.5;
-
-// Disabled styles
-$btn-disabled-background: $disabled-color !default;
-$btn-disabled-color: $disabled-text-color !default;
 
 //Btn colors
 //-----------------
@@ -146,7 +131,6 @@ $btn-warning-border:             $btn-warning-bg !default;
 $btn-danger-color:               $color-white !default;
 $btn-danger-bg:                  $color-danger !default;
 $btn-danger-border:              $btn-danger-bg !default;
-
 
 
 

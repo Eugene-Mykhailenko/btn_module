@@ -9,13 +9,6 @@
   box-sizing: border-box;
 }
 
-
-// Body reset
-html {
-	font-size: 10px;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-
 body {
 	font-family: $font-family-base;
 	font-size: $font-size-base;
@@ -41,11 +34,9 @@ a {
 	&:hover,
 	&:focus,
 	&:active {
+		outline: none !important;
 		color: $link-hover-color;
 		text-decoration: $link-hover-decoration;
-	}
-	&:focus {
-	  	@include tab-focus;
 	}
 }
 
@@ -55,12 +46,6 @@ hr {
 	margin-bottom: $line-height-computed;
 	border: 0;
 	border-top: 1px solid $hr-border;
-}
-
-.container-section {
-	max-width: 1170px;
-	margin: auto;
-	padding: 20px 0;
 }
 
 

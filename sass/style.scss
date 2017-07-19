@@ -1,11 +1,9 @@
 @charset "UTF-8";
+// Reset
+@import "components/normalize";
 
 // Core variables and mixins
 @import "components/variables";
-@import "components/mixins";
-
-// Reset
-@import "components/normalize";
 
 // Core CSS
 @import "components/global";
